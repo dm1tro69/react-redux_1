@@ -22,6 +22,7 @@ return (
     <a href='#' className={'navbar-link'} onClick={handleClickLink(paths.main)}>Main</a>
     <a href='#' className={'navbar-link'} onClick={handleClickLink(paths.about)}>About</a>
     <a href='#' className={'navbar-link'} onClick={handleClickLink(paths.settings)}>Settings</a>
+    <a href='#' className={'navbar-link'} onClick={handleClickLink(paths.dataList)}>List</a>
 </div>
 )
 }

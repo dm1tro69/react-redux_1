@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './style.css'
 import PageAnimated from "../../components/PageAnimated/PageAnimated";
 
 
 const Main = () => {
+
 return (
 <PageAnimated>
     <div className="main">
