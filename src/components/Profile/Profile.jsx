@@ -1,12 +1,19 @@
 import React from 'react'
-import {useDispatch, useSelector} from 'react-redux'
+import { useSelector} from 'react-redux'
 import './style.css'
 
  export const Profile = () => {
     const {profile} = useSelector((state)=> state.profile)
+     const profileName = !!profile && !!profile.name && profile.name.length > 0 ? profile.name: 'Not Name'
+     const profileLastName = !!profile && !!profile.lastName && profile.lastName.length > 0 ? profile.lastName: 'Not Last Name'
 return (
   <div className={'profile'}>
-      {!!profile? <h1>{profile.name}</h1>: <h1>Not Data</h1>}
+      {!!profile? (
+          <div>
+              <h1>{profileName}</h1>
+              <h1>{profileLastName}</h1>
+          </div>
+      ): <h1>Not Data</h1>}
   </div>
 )
 }
